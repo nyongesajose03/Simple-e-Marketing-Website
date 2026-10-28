@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store | SEJO'S LIMITED</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">SEJO'S LIMITED</a>
+        <nav class="header-links" aria-label="Main navigation">
+            <a href="store.html" aria-current="page">Store</a>
+            <a class="cart-nav-link" href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign up</a>
+        </nav>
+    </header>
+    <main>
+        <section class="store-hero">
+            <div class="store-hero-content">
+                <p class="eyebrow">The SEJO'S edit</p>
+                <h1>Everyday essentials.<br>Thoughtfully chosen.</h1>
+                <p>Explore useful finds for work, home, and everywhere in between. Good quality, fair prices, no fuss.</p>
+                <a class="button" href="#products">Browse featured items</a>
+            </div>
+            <div class="store-hero-note" aria-hidden="true">
+                <span>GOOD THINGS</span>
+                <strong>Made for<br>every day.</strong>
+                <span>SEJO'S LIMITED</span>
+            </div>
+        </section>
+        <section class="store-products" id="products" aria-labelledby="products-heading">
+            <div class="store-section-heading">
+                <div>
+                    <p class="eyebrow">A few of our favorites</p>
+                    <h2 id="products-heading">Featured products</h2>
+                </div>
+                <p>Four simple picks to get you started.</p>
+            </div>
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-art product-art-headphones" role="img" aria-label="Illustration of wireless headphones">
+                        <span aria-hidden="true">♫</span>
+                        <span class="product-tag">Bestseller</span>
+                    </div>
+                    <div class="product-details">
+                        <p class="product-category">Electronics</p>
+                        <h3>Wireless Headphones</h3>
+                        <p class="product-description">Comfortable listening for your everyday commute.</p>
+                        <div class="product-buy">
+                            <span class="product-price">KSh 4,900</span>
+                            <button class="product-link add-to-cart" type="button" data-product-id="headphones">Add to cart <span aria-hidden="true">+</span></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-art product-art-bag" role="img" aria-label="Illustration of an everyday backpack">
+                        <span aria-hidden="true">▰</span>
+                        <span class="product-tag">Everyday pick</span>
+                    </div>
+                    <div class="product-details">
+                        <p class="product-category">Accessories</p>
+                        <h3>Everyday Backpack</h3>
+                        <p class="product-description">A clean, practical carry-all for work and weekends.</p>
+                        <div class="product-buy">
+                            <span class="product-price">KSh 3,600</span>
+                            <button class="product-link add-to-cart" type="button" data-product-id="backpack">Add to cart <span aria-hidden="true">+</span></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-art product-art-mug" role="img" aria-label="Illustration of a ceramic mug">
+                        <span aria-hidden="true">☕</span>
+                        <span class="product-tag">For the home</span>
+                    </div>
+                    <div class="product-details">
+                        <p class="product-category">Home &amp; Living</p>
+                        <h3>Stoneware Coffee Mug</h3>
+                        <p class="product-description">A sturdy, understated mug for your favorite brew.</p>
+                        <div class="product-buy">
+                            <span class="product-price">KSh 1,400</span>
+                            <button class="product-link add-to-cart" type="button" data-product-id="mug">Add to cart <span aria-hidden="true">+</span></button>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <div class="product-art product-art-watch" role="img" aria-label="Illustration of a smartwatch">
+                        <span aria-hidden="true">◷</span>
+                        <span class="product-tag">Smart choice</span>
+                    </div>
+                    <div class="product-details">
+                        <p class="product-category">Electronics</p>
+                        <h3>Everyday Smartwatch</h3>
+                        <p class="product-description">Keep the essentials close, from steps to schedules.</p>
+                        <div class="product-buy">
+                            <span class="product-price">KSh 5,900</span>
+                            <button class="product-link add-to-cart" type="button" data-product-id="watch">Add to cart <span aria-hidden="true">+</span></button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="store-footer">
+        <a class="brand" href="index.html">SEJO'S LIMITED</a>
+        <p>Thoughtful finds for everyday living.</p>
+    </footer>
+    <script src="static/js/payment-config.js"></script>
+    <script src="static/js/cart.js" defer></script>
+</body>
+</html>

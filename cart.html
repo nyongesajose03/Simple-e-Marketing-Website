@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | SEJO'S LIMITED</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">SEJO'S LIMITED</a>
+        <nav class="header-links" aria-label="Main navigation">
+            <a href="store.html">Store</a>
+            <a class="cart-nav-link" href="cart.html" aria-current="page">Cart <span class="cart-count" data-cart-count>0</span></a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+    <main class="cart-page">
+        <div class="cart-heading">
+            <p class="eyebrow">Your selection</p>
+            <h1>Your shopping cart</h1>
+            <p>Review your items and choose how you would like them delivered.</p>
+        </div>
+        <p class="cart-notice" id="cart-notice" role="status" aria-live="polite"></p>
+        <div class="cart-layout">
+            <section class="cart-items-panel" aria-labelledby="cart-items-heading">
+                <div class="cart-panel-heading">
+                    <h2 id="cart-items-heading">Items <span id="cart-item-count">(0)</span></h2>
+                    <a href="store.html">Continue shopping</a>
+                </div>
+                <div id="cart-items"></div>
+            </section>
+            <aside class="cart-summary" aria-labelledby="summary-heading">
+                <h2 id="summary-heading">Order summary</h2>
+                <div class="shipping-options">
+                    <p class="summary-label">Delivery method</p>
+                    <label class="shipping-option">
+                        <input type="radio" name="shipping" value="standard" checked>
+                        <span><strong>Standard delivery</strong><small>Free over KSh 7,500 · 3–5 business days</small></span>
+                        <span class="shipping-price" id="standard-shipping-price">KSh 500</span>
+                    </label>
+                    <label class="shipping-option">
+                        <input type="radio" name="shipping" value="express">
+                        <span><strong>Express delivery</strong><small>1–2 business days</small></span>
+                        <span class="shipping-price">KSh 1,200</span>
+                    </label>
+                </div>
+                <div class="summary-lines">
+                    <div><span>Subtotal</span><strong id="cart-subtotal">KSh 0</strong></div>
+                    <div><span>Delivery</span><strong id="cart-shipping">KSh 0</strong></div>
+                    <div class="summary-total"><span>Total</span><strong id="cart-total">KSh 0</strong></div>
+                </div>
+                <p class="cart-demo-note">Daraja sandbox only: no real customer prompt, PIN collection, or payment will occur. Sample prices are in Kenyan shillings.</p>
+                <button class="button cart-checkout-button" id="checkout-button" type="button" disabled>Continue to payment</button>
+                <form class="mpesa-form" id="mpesa-form" novalidate hidden>
+                    <label for="mpesa-phone">Safaricom phone number</label>
+                    <p class="mpesa-form-hint">Enter a Kenyan number, for example 0712 345 678 or +254 712 345 678.</p>
+                    <input
+                        id="mpesa-phone"
+                        name="phone"
+                        type="tel"
+                        inputmode="tel"
+                        autocomplete="tel"
+                        placeholder="07XX XXX XXX"
+                        pattern="(?:\+?254|0)(?:7|1)[0-9]{8}"
+                        aria-describedby="mpesa-phone-error mpesa-payment-status"
+                        required
+                    >
+                    <p class="mpesa-field-error" id="mpesa-phone-error"></p>
+                    <button class="button mpesa-submit-button" type="submit">Send sandbox STK Push</button>
+                    <p class="mpesa-payment-status" id="mpesa-payment-status" role="status" aria-live="polite"></p>
+                </form>
+                <p class="cart-secure-note">In production, your M-Pesa PIN is entered only on your phone, never on this website.</p>
+            </aside>
+        </div>
+    </main>
+    <footer class="store-footer">
+        <a class="brand" href="index.html">SEJO'S LIMITED</a>
+        <p>Thoughtful finds for everyday living.</p>
+    </footer>
+    <script src="static/js/payment-config.js"></script>
+    <script src="static/js/cart.js" defer></script>
+</body>
+</html>

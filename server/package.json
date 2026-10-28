@@ -1,0 +1,12 @@
+{
+  "name": "sejos-daraja-sandbox",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Sandbox-only M-Pesa STK Push API for SEJO'S LIMITED",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
